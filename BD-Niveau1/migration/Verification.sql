@@ -20,5 +20,10 @@ ORDER BY c.nom_categorie;
 -- On ajoute pas une colonne categorie VARCHAR(50) dans la table plat car ca va fausser les donnees
 -- par exemple si il y a une faute d'orthographe sur plat malagasy ca va fausser les donees si on veux le nombre des plats qui ont la categorie plat malagasy
 
-
+-- ETAPE 3
+SELECT id_commande, SUM(quantite * prix) AS montant_total
+FROM ligne_commande
+JOIN plat USING (id_plat)
+GROUP BY id_commande;
+-- je place la quantite dans la table ligne_commande car une commande peut contenir plusieurs plats et chaque plat peut avoir une quantite differente
 

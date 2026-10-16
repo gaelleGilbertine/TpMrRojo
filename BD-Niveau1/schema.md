@@ -12,4 +12,11 @@
 - **id_categorie**
 - nom_categorie
 
+# ETAPE 3
+## commande 
+- **id_commande**
 
+## ligne_commande
+- #**id_commande**
+- #**id_plat**
+- quantite
