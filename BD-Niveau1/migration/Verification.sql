@@ -27,3 +27,8 @@ JOIN plat USING (id_plat)
 GROUP BY id_commande;
 -- je place la quantite dans la table ligne_commande car une commande peut contenir plusieurs plats et chaque plat peut avoir une quantite differente
 
+--- ETAPE 4
+SELECT id_commande, COALESCE(nom_client, 'client de passage')
+FROM commande
+LEFT JOIN client USING (id_client);
+-- id_client est pas NOT NULL, car une commande ne peut pas se faire sans client.
