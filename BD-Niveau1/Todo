@@ -1,0 +1,9 @@
+- Schema relationnel complet apres chaque modification (nouveau/modifier)
+- ecrire le script de migration : uniquement des
+    + CREATE TABLE
+    + ALTER TABLE
+    + INSERT
+    + UPDATE
+- Ajout de quelques lignes de donnees test
+- ecrire les requetes de verifications qui prouve que le besoin est couvert
+- repondre a la question "Piege" en une ou deux phrase
