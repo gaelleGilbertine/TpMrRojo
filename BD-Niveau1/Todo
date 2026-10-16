@@ -7,3 +7,13 @@
 - Ajout de quelques lignes de donnees test
 - ecrire les requetes de verifications qui prouve que le besoin est couvert
 - repondre a la question "Piege" en une ou deux phrase
+
+- sudo systemctl status postgresql
+- psql --version
+- sudo -u postgres psql
+- \c Rado
+- \q
+- cd BD-Niveau1/migration
+- sudo -u postgres psql -d rado -f etape_01.sql
+- sudo -u postgres psql -d rado
+- \dt
